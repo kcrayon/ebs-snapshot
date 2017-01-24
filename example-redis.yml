@@ -1,0 +1,15 @@
+AWS:
+  Key: YOUR_KEY_HERE
+  Secret: YOUR_SECRET_HERE
+
+Volumes:
+  redis:
+    Mount: /var/lib/redis
+
+Types:
+  Daily:
+    Every: 1 day
+    Keep: 14
+  Weekly:
+    Every: 7 day
+    Keep: 52
